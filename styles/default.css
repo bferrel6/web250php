@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* main styles */
+
+:root {
+	--tangerine: #F27F0C;
+	--buttercup: #F7C45E; /* original f7ad19 */
+	--teal-blue: #053F5C;
+	--pelorous: #A9D5EF; /*original 429edb */
+	--sky-blue: #9FE7F5;
+}
+
+body{
+	font-family: 'Cambria', serif;
+	color: var(--buttercup);	
+	background: var(--teal-blue);
+	min-width: 480px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+/* text and image styles */ 
+
+header :not(nav){
+	display: inline-block;
+}
+
+header h3 {
+	margin-left: 28%;
+	margin-right: 0;
+}
+
+main{
+	display: grid;
+	line-height: 2;
+	border-top: 2px solid var(--tangerine);
+}
+
+main h2,
+main p {
+	grid-column-start: span 2;
+}
+
+main figure{
+	grid-column-start: 2;
+	grid-row-start: 2;
+	margin-left: 50px;	
+}
+
+figcaption{
+	font-style: italic;
+	text-align: center;
+}
+
+footer p {
+	text-align: center;
+}
+
+h1, h2, h3, h5{
+	font-family: 'Eras Bold ITC', sans-serif;
+	color: var(--tangerine);
+}
+
+main h1,
+main h2,
+main h3,
+main h5 {
+	text-align: center;
+}
+
+a {
+	color:var(--sky-blue);
+}
+
+a:hover {
+	color:var(--teal-blue);
+	background-color: var(--pelorous);
+}
+
+/* brand styles */
+
+.brandBox {
+	grid-column-start: span 2;
+}
+
+div.brandHeading {
+	border: 3px solid var(--tangerine);
+	margin-left: 45%;
+}
+
+.brandBox p {
+	margin-left: 100px;
+}
+
+.brandBox div {
+	display: inline-block;
+	margin: 10px;
+}
+
+.brandBox ul {
+	text-align: right;
+	margin-right: 25%;
+	font-size: x-large;
+	list-style: none;
+}
+
+span.paletteGradient {
+	float: left;
+	position: relative;
+	width: 75px;
+	height: 100%;
+	background: linear-gradient(180deg, 
+		var(--tangerine) 10%, 
+		var(--buttercup) 30%, 
+		var(--teal-blue) 50%, 
+		var(--pelorous) 70%, 
+		var(--sky-blue) 90%);
+}
+
+.backgroundExample {
+	background-color: var(--teal-blue);
+	color: var(--buttercup);
+}
+
+.headingExample {
+	background-color: var(--teal-blue);
+}
+
+.headingExample > h3 {
+	color: var(--tangerine);
+	font-size: 80%;
+	margin: 10px;
+}
+
+.textExample {
+	background-color: var(--teal-blue);
+	color: var(--buttercup);
+}
+
+.linkExample {
+	background-color: var(--teal-blue);
+}
+
+.hoverExample {
+	background-color: var(--pelorous);
+}
+
+/* navigation styles */
+
+nav {
+	display: flex;
+	text-align: center;
+}
+
+nav a {
+	align-content: center;
+	text-decoration: none;
+	height: 2em;
+	width: 100%;
+	padding-top: 12px;
+	border-top: 2px solid var(--tangerine);
+}

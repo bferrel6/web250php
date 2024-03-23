@@ -1,0 +1,36 @@
+{
+    "footerLinks": {
+        "names": [
+            "GitHub",
+            "GitHub.io",
+            "WEB250.io",
+            "freeCodeCamp",
+            "Codecademy",
+            "JSFiddle",
+            "LinkedIn"
+        ],
+        "hrefs": [
+            "https://github.com/bferrel6",
+            "https://bferrel6.github.io",
+            "https://bferrel6.github.io/web250",
+            "https://www.freecodecamp.org/bferrel6",
+            "https://www.codecademy.com/profiles/bferrel6",
+            "https://jsfiddle.net/user/bferrel6/fiddles/",
+            "https://www.linkedin.com/in/benjamin-ferrell-7361301a6"
+        ]
+    },
+    "validationLinks": {
+        "names": [
+            "Validate HTML",
+            "Validate CSS"
+        ],
+        "hrefs": [
+            "http://validator.w3.org/check?uri=referer",
+            "http://jigsaw.w3.org/css-validator/check/referer"
+        ],
+        "ids": [
+            "validation_link_html",
+            "validation_link_css"
+        ]
+    }
+}

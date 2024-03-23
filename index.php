@@ -12,7 +12,7 @@
 <body>
     <header>
         <h1>Ben Ferrell's Blue Fortitude | WEB250</h1>
-        <h3>Building a Seabed Utopia</h3>
+        <h3><em>Building a Seabed Utopia</em></h3>
         <nav>
             <a href="?p=home">Home</a>
             <a href="?p=introduction">Introduction</a>

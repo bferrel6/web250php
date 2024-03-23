@@ -144,6 +144,7 @@ span.paletteGradient {
 
 .hoverExample {
 	background-color: var(--pelorous);
+	color: var(--teal-blue);
 }
 
 /* navigation styles */

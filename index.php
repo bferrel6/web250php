@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Ferrell's Blue Fortitude | WEB250</title>
     <link rel="stylesheet" type="text/css" href="styles/default.css">
-    <script href="scripts/addFooter.js" defer></script>
+    <script src="scripts/addFooter.js" defer></script>
 </head>
 
 <body>

@@ -11,15 +11,13 @@
 
 <body>
     <header>
-        <a href="index.php">
-            <h1>Ben Ferrell's Blue Fortitude | WEB250</h1>
-        </a>
+        <h1>Ben Ferrell's Blue Fortitude | WEB250</h1>
         <h3>Building a Seabed Utopia</h3>
         <nav>
-            <a href="?p=home.php">Home</a>
-            <a href="?p=introduction.php">Introduction</a>
-            <a href="?p=contract.php">Contract</a>
-            <a href="?p=brand.php">Brand</a>
+            <a href="?p=home">Home</a>
+            <a href="?p=introduction">Introduction</a>
+            <a href="?p=contract">Contract</a>
+            <a href="?p=brand">Brand</a>
         </nav>
     </header>
     <main>
@@ -28,12 +26,11 @@
         <?php
         $content = $_GET["p"] ?? null;
 
-        if ($content == "") { $content = "home.php"; }
-        include("content/$content");
+        if ($content == "") { $content = "home"; }
+        include("content/$content.php");
         ?>
 
     </main>
-    
 </body>
 
 </html>

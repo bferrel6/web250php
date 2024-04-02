@@ -17,7 +17,7 @@
             <li><a href="http://bferrel6.github.io/web215"><em><strong>WEB215 - Advanced Markup and Scripting:</strong></em></a>
                 Increase confidence and proficiency in building web applications with JS frameworks.
             </li>
-            <li><a href="contract.html"><em><strong>WEB250 - Database Driven Websites:</strong></em></a>
+            <li><a href="?p=contract"><em><strong>WEB250 - Database Driven Websites:</strong></em></a>
                 Learn what PHP was doing behind the scenes in WordPress and harness its capabilities.
             </li>
             <li><em><strong>CSC221 - Advanced Python Programming: </strong></em>

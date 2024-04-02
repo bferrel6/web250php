@@ -18,6 +18,7 @@
             <a href="?p=introduction">Introduction</a>
             <a href="?p=contract">Contract</a>
             <a href="?p=brand">Brand</a>
+            <a href="?p=viewModules">Fleet Modules</a>
         </nav>
     </header>
     <main>

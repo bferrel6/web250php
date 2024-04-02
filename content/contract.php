@@ -1,7 +1,7 @@
 <h2>Course Contract</h2>
 
 <p>
-    I, <a href="introduction.html">Benjamin E Ferrell</a>, agree to abide by the terms in my Spring 2024 WEB250 Database Driven Websites Course with my instructor, D.I. von Briesen.
+    I, <a href="?p=introduction">Benjamin E Ferrell</a>, agree to abide by the terms in my Spring 2024 WEB250 Database Driven Websites Course with my instructor, D.I. von Briesen.
 </p>
 
 <p>

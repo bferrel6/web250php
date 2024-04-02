@@ -7,5 +7,5 @@
 </p>
 
 <p>
-    If you would like to learn more about me, please visit my <a href="introduction.html">introduction page</a>.
+    If you would like to learn more about me, please visit my <a href="?p=introduction">introduction page</a>.
 </p>

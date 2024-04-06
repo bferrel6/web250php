@@ -1,5 +1,5 @@
 <?php
-    $mysqli = new mysqli('localhost', 'u433082664_bf_admin', '3bfY_jviTz7-[4oY', 'u433082664_blue_fortitude');
+    $mysqli = new mysqli('localhost', 'bf_admin', '3bfY_jviTz7-[4oY', 'blue_fortitude');
             
     //check connection
     if (mysqli_connect_errno()) {
@@ -10,6 +10,6 @@
     echo '<p>Connected successfully to MySQL.</p>';
 
     //select database to work with
-    $mysqli->select_db('u433082664_blue_fortitude');
+    $mysqli->select_db('blue_fortitude');
     echo '<p>Selected the <em>Blue Fortitude</em> database.</p>';
 ?>

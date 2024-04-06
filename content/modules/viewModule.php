@@ -38,6 +38,7 @@ if ($result = $mysqli->query($query)) {
         $image = $result_ar['IMAGE_FILE'];
         echo "<img src='images/$image' alt='$type'>";
     }
+    echo "<p>modules visualized by <a href='https://deepai.org/machine-learning-model/text2img' target='_blank' >DEEPAI.ORG</a></p>";
     echo "</div>";
 } else {
     echo "Sorry, images of a module with ID of $id cannot be found"

@@ -28,7 +28,7 @@ $mysqli->close();
 <h3>Edit Module Details</h3>
 <form action="?p=modules/updateRecord" method="post">
     <label for="id">ID:</label>
-    <input name="id" type="text" value="<?php echo $id; ?>" required><br>
+    <input name="id" type="text" value="<?php echo $id; ?>" disabled><br>
     <label for="type">Type:</label>
     <input name="type" type="text" value="<?php echo $type; ?>" required><br>
     <label for="occupancy">Occupancy:</label>

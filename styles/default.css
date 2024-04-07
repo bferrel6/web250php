@@ -171,8 +171,7 @@ nav a {
 /* view cars table */
 #grid {
 	grid-column-start: span 2;
-	min-width: 60%;
-    max-width: 80%;
+	min-width: 90%;
     border-collapse: collapse;
     margin: 25px auto;
 }
@@ -208,30 +207,87 @@ nav a {
 }
 
 /* input forms */
-form * {
+form {
 	grid-column-start: span 2;
+	width: 100%;
+	margin-top: -2em;
+}
+
+form * {
     display: inline-block;
+}
+
+#get-form {
+	width: 105%;
+}
+
+#post-form {
+	width: 90%;
+}
+
+#get-form,
+#get-output {
+	grid-column-start: 1;
+	margin-right: 4em;
+}
+
+#post-form,
+#post-output {
+	grid-column-start: 2;
+	margin-left: 4em;
+}
+
+#get-output,
+#post-output {
+	margin-bottom: 2em;
+	border: 1px solid var(--tangerine);
+	padding: 1em;
+}
+
+#get-output {
+	width: 100%;
+}
+
+#post-output {
+	width: 85%;
 }
 
 label,
 input,
-textarea {
+textarea,
+select {
     margin: 15px auto;
+}
+
+fieldset {
+	width: 100%;
+	padding: 0;
+	margin: 25px 0;
+}
+
+fieldset * {
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 label {
     width: 150px;
 }
 
+label[for="skills[]"],
+label[for="description"] {
+	vertical-align: top;
+}
+
 input, 
 textarea {
 	width: 200px;
+	font-family: 'Cambria', serif;
 }
 
-textarea {
-	font-family: 'Cambria', serif;
-	color: var(--buttercup);	
-	background: var(--teal-blue);
+select * {
+	width: 175px;
+	display: block;
 }
 
 #output {

@@ -4,7 +4,7 @@ include 'content/components/db.php';
 $id = $_GET['ID'];
 $query = "SELECT * FROM modules WHERE ID='$id'";
 
-// try to query the cars table
+// try to query the modules table
 if ($result = $mysqli->query($query)) {
     //don't do anything if successful
 } else {
@@ -12,7 +12,7 @@ if ($result = $mysqli->query($query)) {
         . mysqli_error($mysqli) . "<br>";
 }
 
-// loop through all the rows returned by the query, creating a table row for each
+// output data matching the selected module
 while ($result_ar = mysqli_fetch_assoc($result)) {
     $type = $result_ar['TYPE'];
     $occupancy = number_format($result_ar['OCCUPANCY']);
@@ -47,13 +47,13 @@ if ($result = $mysqli->query($query)) {
 
 $mysqli->close();
 ?>
-<div id="output">
-<h4>Upload a Photo</h4>
 <form action="?p=modules/uploadFile&ID=<?php echo $id; ?>" method="post" enctype="multipart/form-data">
+<fieldset>
+    <legend>Upload a Photo</legend>
     <label for="file">Filename:</label>
     <input type="file" name="file" id="file"></br>
     <input type="submit" name="submit" value="Upload">
+</fieldset>
 </form>
-</div>
 
 <p><a href="?p=viewModules">Return to Fleet Modules</a></p>

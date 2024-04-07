@@ -57,7 +57,7 @@ if ($_FILES["file"]["error"] > 0) {
         echo "There was an error uploading the file, please try again!";
     }
 }
-
+echo "<p><a href=\"?p=viewModules\">Return to Fleet Modules</a></p>";
 echo "</div>";
 
 ?>

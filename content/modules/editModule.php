@@ -24,9 +24,9 @@ while ($result_ar = mysqli_fetch_assoc($result)) {
 
 $mysqli->close();
 ?>
-<div id="output">
-<h3>Edit Module Details</h3>
+<h2>Edit Module Details</h2>
 <form action="?p=modules/updateRecord" method="post">
+<fieldset>
     <label for="id">ID:</label>
     <input name="id" type="text" value="<?php echo $id; ?>" disabled><br>
     <label for="type">Type:</label>
@@ -40,5 +40,5 @@ $mysqli->close();
     <label for="description">Description:</label>
     <textarea name="description"><?php echo $description; ?></textarea><br>
     <input name="submit1" type="submit" value="Submit Changes"><br>
+</fieldset>
 </form>
-</div>

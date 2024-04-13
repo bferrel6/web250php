@@ -54,7 +54,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $isEcho2 = ($i % $numbers[1] === 0 ? $words[1] : '');
             $isEcho3 = ($i % $numbers[2] === 0 ? $words[2] : '');
 
-            $addWords = [];
             if (!$isEcho1 && !$isEcho2 && !$isEcho3) {
                 $result[] = $i;
             } else {

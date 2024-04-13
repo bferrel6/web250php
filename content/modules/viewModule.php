@@ -35,7 +35,7 @@ if ($result = $mysqli->query($query)) {
     //loop through all the rows returned by the query
     echo "<div>";
     while ($result_ar = mysqli_fetch_assoc($result)) {
-        $image = $result_ar['IMAGE_FILE'];
+        $image = $result_ar['IMAGE_FILE'] ?? null;
         echo "<img src='images/$image' alt='$type'>";
     }
     if ($image) {

@@ -35,10 +35,10 @@ if ($result = $mysqli->query($query)) {
     //loop through all the rows returned by the query
     echo "<div>";
     while ($result_ar = mysqli_fetch_assoc($result)) {
-        $image = $result_ar['IMAGE_FILE'] ?? null;
+        $image = $result_ar['IMAGE_FILE'];
         echo "<img src='images/$image' alt='$type'>";
     }
-    if ($image) {
+    if (isset($image)) {
         echo "<p>modules visualized by <a href='https://deepai.org/machine-learning-model/text2img' target='_blank' >DEEPAI.ORG</a></p>";
     }
     echo "</div>";

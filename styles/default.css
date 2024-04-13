@@ -6,7 +6,7 @@
 	--tangerine: #F27F0C;
 	--buttercup: #F7C45E; /* original f7ad19 */
 	--teal-blue: #053F5C;
-	--pelorous: #A9D5EF; /*original 429edb */
+	--pelorous: #A9D5EF; /* original 429edb */
 	--sky-blue: #9FE7F5;
 }
 
@@ -14,7 +14,7 @@ body{
 	font-family: 'Cambria', serif;
 	color: var(--buttercup);	
 	background: var(--teal-blue);
-	min-width: 480px;
+	min-width: 750px;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 5%;
@@ -152,8 +152,8 @@ span.paletteGradient {
 nav {
 	display: flex;
 	text-align: center;
-	border-top: 2px solid var(--tangerine);
-	border-bottom: 2px solid var(--tangerine);
+	border-top: 3px solid var(--tangerine);
+	border-bottom: 3px solid var(--tangerine);
 }
 
 #module-nav {
@@ -169,6 +169,7 @@ nav a {
 }
 
 /* view cars table */
+
 #grid {
 	grid-column-start: span 2;
 	min-width: 90%;
@@ -207,6 +208,7 @@ nav a {
 }
 
 /* input forms */
+
 form {
 	grid-column-start: span 2;
 	width: 100%;
@@ -238,7 +240,8 @@ form * {
 }
 
 #get-output,
-#post-output {
+#post-output,
+#fizzbuzz-output {
 	margin-bottom: 2em;
 	border: 1px solid var(--tangerine);
 	padding: 1em;
@@ -290,10 +293,26 @@ select * {
 	display: block;
 }
 
-#output {
+#output, 
+#fizzbuzz-output {
 	grid-column-start: span 2;
 }
 
 #output p {
 	font-size: 1.2em;
+}
+
+/* fizzbuzz forms */
+
+#fizzbuzz-form label {
+	width: 10rem;
+	margin-left: 5%;
+}
+
+#fizzbuzz-form input {
+	width: 18rem;
+}
+
+#fizzbuzz-form input[name="submit"] {
+	margin: 20px 0 20px 5%;
 }

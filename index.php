@@ -20,6 +20,7 @@
             <a href="?p=brand">Brand</a>
             <a href="?p=viewModules">Fleet Modules</a>
             <a href="?p=forms">Forms</a>
+            <a href="?p=fizzbuzz">Fizz Buzz</a>
         </nav>
     </header>
     <main>

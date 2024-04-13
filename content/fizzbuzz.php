@@ -15,20 +15,20 @@
         <label for="end-range">Ending Frequency</label>
         <input name="end-range" type="number" value="250" min="10" required><br>
 
-        <label for="number1">First Echo</label>
-        <input name="number1" type="number" value="3" required>
-        <label for="word1">Callback 1</label>
-        <input name="word1" type="text" value="SALMON" required><br>
+        <label for="echo1">First Echo</label>
+        <input name="echo1" type="number" value="3" required>
+        <label for="callback1">First Callback</label>
+        <input name="callback1" type="text" value="SALMON" required><br>
 
-        <label for="number2">Second Echo</label>
-        <input name="number2" type="number" value="5" required>
-        <label for="word2">Callback 2</label>
-        <input name="word2" type="text" value="TUNA" required><br>
+        <label for="echo2">Second Echo</label>
+        <input name="echo2" type="number" value="5" required>
+        <label for="callback2">Second Callback</label>
+        <input name="callback2" type="text" value="TUNA" required><br>
 
-        <label for="number3">Third Echo</label>
-        <input name="number3" type="number" value="7" required>
-        <label for="word3">Callback 3</label>
-        <input name="word3" type="text" value="URCHIN" required><br>
+        <label for="echo3">Third Echo</label>
+        <input name="echo3" type="number" value="7" required>
+        <label for="callback3">Third Callback</label>
+        <input name="callback3" type="text" value="URCHIN" required><br>
 
         <input name="submit" type="submit" value="Submit">
     </fieldset>
@@ -47,12 +47,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($startRange >= $endRange) {
         echo "Invalid frequency range, scan failed...";
     } else {
-        $numbers = [$_POST['number1'], $_POST['number2'], $_POST['number3']];
-        $words = [htmlspecialchars($_POST['word1']), htmlspecialchars($_POST['word2']), htmlspecialchars($_POST['word3'])];
+        $echoes = [$_POST['echo1'], $_POST['echo2'], $_POST['echo3']];
+        $callbacks = [htmlspecialchars($_POST['callback1']), htmlspecialchars($_POST['callback2']), htmlspecialchars($_POST['callback3'])];
         foreach (range($startRange, $endRange) as $i) {
-            $isEcho1 = ($i % $numbers[0] === 0 ? $words[0] : '');
-            $isEcho2 = ($i % $numbers[1] === 0 ? $words[1] : '');
-            $isEcho3 = ($i % $numbers[2] === 0 ? $words[2] : '');
+            $isEcho1 = ($i % $echoes[0] === 0 ? $callbacks[0] : '');
+            $isEcho2 = ($i % $echoes[1] === 0 ? $callbacks[1] : '');
+            $isEcho3 = ($i % $echoes[2] === 0 ? $callbacks[2] : '');
 
             if (!$isEcho1 && !$isEcho2 && !$isEcho3) {
                 $result[] = $i;

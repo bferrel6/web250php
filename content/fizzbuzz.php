@@ -11,22 +11,22 @@
         <input name="last-name" type="text" value="Zissou" required><br>
 
         <label for="start-range">Starting Frequency</label>
-        <input name="start-range" type="i" value="1" min="0" required>
+        <input name="start-range" type="number" value="1" min="0" required>
         <label for="end-range">Ending Frequency</label>
-        <input name="end-range" type="i" value="250" min="10" required><br>
+        <input name="end-range" type="number" value="250" min="10" required><br>
 
         <label for="number1">First Echo</label>
-        <input name="number1" type="i" value="3" required>
+        <input name="number1" type="number" value="3" required>
         <label for="word1">Callback 1</label>
         <input name="word1" type="text" value="SALMON" required><br>
 
         <label for="number2">Second Echo</label>
-        <input name="number2" type="i" value="5" required>
+        <input name="number2" type="number" value="5" required>
         <label for="word2">Callback 2</label>
         <input name="word2" type="text" value="TUNA" required><br>
 
         <label for="number3">Third Echo</label>
-        <input name="number3" type="i" value="7" required>
+        <input name="number3" type="number" value="7" required>
         <label for="word3">Callback 3</label>
         <input name="word3" type="text" value="URCHIN" required><br>
 

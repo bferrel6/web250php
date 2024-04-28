@@ -28,7 +28,7 @@ $mysqli->close();
 <form action="?p=modules/updateRecord" method="post">
 <fieldset>
     <label for="id">ID:</label>
-    <input name="id" type="text" value="<?php echo $id; ?>" disabled><br>
+    <input name="id" type="text" value="<?php echo $id; ?>" readonly><br>
     <label for="type">Type:</label>
     <input name="type" type="text" value="<?php echo $type; ?>" required><br>
     <label for="occupancy">Occupancy:</label>

@@ -1,6 +1,6 @@
-<h2>Forms</h2>
+<h2>HR Forms</h2>
 
-<form action="" method="get" id="get-form">
+<form action="" method="get" id="left-form">
     <fieldset>
         <legend>
             <h3>Search Candidates</h3>
@@ -20,12 +20,12 @@
             <option value="Fishing">Fishing</option>
             <option value="Building">Building</option>
         </select><br>
-        <p>Hold down Ctrl key in Windows (or Command in MacOS)<br>to select multiple skills.</p><br>
+        <p><em>Hold down Ctrl key in Windows (or Command in MacOS)<br>to select multiple skills.</em></p><br>
         <input name="submitGet" type="submit" value="Search"><br>
     </fieldset>
 </form>
 
-<form action="" method="post" id="post-form">
+<form action="" method="post" id="right-form">
     <fieldset>
         <legend>
             <h3>Candidate Application</h3>
@@ -43,7 +43,7 @@
             <option value="Fishing">Fishing</option>
             <option value="Building">Building</option>
         </select><br>
-        <p>Hold down Ctrl key in Windows (or Command in MacOS)<br>to select multiple skills.</p><br>
+        <p><em>Hold down Ctrl key in Windows (or Command in MacOS)<br>to select multiple skills.</em></p><br>
         <input name="submitPost" type="submit" value="Submit"><br>
     </fieldset>
 </form>
@@ -54,7 +54,7 @@ if (isset($_GET['submitGet'])) {
     $name = htmlspecialchars($_GET['name']);
     $dob = date('m-d-Y', strtotime($_GET["dob"]));
     $skills = $_GET['skills'] ?? null;
-    echo "<div id='get-output'>";
+    echo "<div id='left-output'>";
     if (!$name && !$skills) {
         echo "No search criteria entered,<br>Please try again...</div>";
     } else {
@@ -82,7 +82,7 @@ if (isset($_GET['submitGet'])) {
 
 // POST FORM PROCESSING
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    echo "<div id='post-output'>";
+    echo "<div id='right-output'>";
     $postOutput = "Application submitted for: <br>";
 
     $name = htmlspecialchars($_POST['name']);

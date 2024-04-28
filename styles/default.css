@@ -165,6 +165,7 @@ nav a {
 	text-decoration: none;
 	height: 2em;
 	width: 100%;
+	min-width: 96px;
 	padding-top: 12px;
 }
 
@@ -219,39 +220,39 @@ form * {
     display: inline-block;
 }
 
-#get-form {
+#left-form {
 	width: 105%;
 }
 
-#post-form {
+#right-form {
 	width: 90%;
 }
 
-#get-form,
-#get-output {
+#left-form,
+#left-output {
 	grid-column-start: 1;
 	margin-right: 4em;
 }
 
-#post-form,
-#post-output {
+#right-form,
+#right-output {
 	grid-column-start: 2;
 	margin-left: 4em;
 }
 
-#get-output,
-#post-output,
+#left-output,
+#right-output,
 #fizzbuzz-output {
 	margin-bottom: 2em;
 	border: 1px solid var(--tangerine);
 	padding: 1em;
 }
 
-#get-output {
+#left-output {
 	width: 100%;
 }
 
-#post-output {
+#right-output {
 	width: 85%;
 }
 
@@ -286,6 +287,11 @@ input,
 textarea {
 	width: 200px;
 	font-family: 'Cambria', serif;
+}
+
+input[name="firstName"],
+input[name="lastName"] {
+	width: 150px;
 }
 
 select * {
